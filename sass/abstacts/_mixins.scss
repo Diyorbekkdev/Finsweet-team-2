@@ -1,0 +1,85 @@
+$rem-base: 16px;
+@function calculateRem($size) {
+  @return calc($size / $rem-base) * 1rem;
+}
+
+// HEADINGLAR UCHUN
+@mixin heading($heading) {
+  $font-sizes: (
+    h1: 56px,
+    h2: 48px,
+    h3: 36px,
+    h4: 24px,
+    h6: 16px,
+  );
+
+  $line-heights: (
+    h1: 68px,
+    h2: 58px,
+    h3: 54px,
+    h4: 36px,
+    h6: 28px,
+  );
+
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: calculateRem(map-get($font-sizes, $heading));
+  line-height: calculateRem(map-get($line-heights, $heading));
+  letter-spacing: -0.01em;
+  color: #232536;
+}
+
+@mixin paragraph {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+}
+@mixin p_large {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #232536;
+}
+
+@mixin p_small {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+}
+
+@mixin caption {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.87;
+}
+
+// GRID UCHUN MIXIN
+@mixin grid($cols, $gap) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  grid-gap: $gap;
+}
+
+// Mixin for Flexbox
+@mixin flexbox($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin media($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
