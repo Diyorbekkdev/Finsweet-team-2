@@ -1,0 +1,79 @@
+@import "../main.scss";
+
+main{
+  position: relative;
+  // z-index: -1;
+}
+#section-1 {
+  padding: 176px 0 96px;
+}
+
+.sec1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  .left {
+    h6 {
+      @include caption;
+    }
+    h2 {
+      @include heading(h2);
+      margin: 24px 0 16px;
+    }
+    p {
+      @include paragraph;
+      max-width: 430px;
+    }
+    .btn {
+      width: 182px;
+      position: relative;
+      background-color: $blue;
+      padding: 20px 30px;
+      transition: 0.5s;
+      margin-top: 40px;
+      a {
+        color: $white;
+        text-decoration: none;
+        .strelka {
+          margin-left: 13px;
+          transition: 0.3s;
+        }
+      }
+      .border-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        opacity: 0;
+        transition: 0.8s;
+      }
+      &:hover {
+        .strelka {
+          transform: translateX(10px);
+        }
+        .border-img{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .right{
+    position: relative;
+    background-color: $light-yellow;
+    padding: 80px 110px 80px 80px;
+    img{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    h4{
+      @include heading(h4);
+      margin-bottom: 8px;
+    }
+    p{
+      @include paragraph;
+      margin-top: 16px;
+    }
+  }
+}
