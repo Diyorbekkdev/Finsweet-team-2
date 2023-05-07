@@ -15,3 +15,20 @@ tl.to(".purple", { rotation: 360 });
 tl.to(".orange", { rotation: 360 });
 
 
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+// create the smooth scroller FIRST!
+const smoother = ScrollSmoother.create({
+  content: "#scrollsmoother-container",
+  smooth: 3,
+  normalizeScroll: true,
+  ignoreMobileResize: true,
+	effects: true,
+  //preventDefault: true,
+  //ease: 'power4.out',
+  //smoothTouch: 0.1, 
+});
+
+
+

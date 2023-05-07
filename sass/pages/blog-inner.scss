@@ -1,1 +1,109 @@
 @import '../main.scss';
+
+
+.direction_container{
+    position: relative;
+    .direction{
+        padding: 5px;
+        position: absolute;
+        display: flex;
+        align-items: center  !important;
+        justify-content: flex-start;
+        top: -65px;
+        max-width: 415px;
+        height: 50px;
+        background: rgb(9, 15, 49);
+        border-radius: 10px;
+        // left: 146px;
+        .home{
+            color: rgba(91, 91, 93, 0.767);
+        }
+        .hover:hover{
+            i{
+                color: #fff;
+            }
+        }
+        a{
+            display: flex;
+            align-items: center;
+            @include paragraph();
+            text-decoration: none;
+            &:hover{
+                color: #fff;
+            }
+        }
+        .right{
+            font-size: 26px;
+            margin:0 3px;
+        }
+        .inner{
+            color: #fff;
+        }
+    }
+}
+
+.breaking{
+    
+    &_container{
+        position: relative;
+        margin-top: 176px;
+        .shape_1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .shape_2{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-info{
+            h2{
+                @include heading(h2);
+                max-width: 700px;
+                padding-top: 50px;
+            }
+            .breaking_info{
+                margin-top: 24px;
+                @include paragraph();
+                max-width: 719px;
+            }
+            .hero_info{
+                margin-top: 32px;
+                @include flexbox(row, flex-start, center);
+                gap: 12px;
+                .january{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+// second section
+.shoot{
+    img{
+        margin-top: 96px;
+        width: 100%;
+    }
+}
+
+.idea_container{
+    max-width: 842px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.idea{
+    h1{
+        margin-top: 96px;
+        @include heading(h3);
+    }
+    p{
+        margin-top: 24px;
+        @include paragraph;
+    }
+    h4{
+        @include heading(h4)
+    }
+}
