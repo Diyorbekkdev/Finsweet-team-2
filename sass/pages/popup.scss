@@ -101,8 +101,6 @@ label {
   left: 0;
   opacity: 0;
   visibility: hidden;
-  overflow-y: auto;
-  overflow-x: hidden;
   transition: all 0.8s ease 0s;
 }
 
@@ -112,7 +110,7 @@ label {
   align-items: center;
   justify-content: center;
   padding-top: 90px;
-  padding-bottom: 96px;
+  padding-bottom: px;
 }
 
 .popup__content {
@@ -120,7 +118,7 @@ label {
   color: black;
   max-width: 550px;
   position: relative;
-  padding: 50px;
+  padding: 40px;
   opacity: 0;
   transition: all 0.8s ease 0s;
   transform: translate(0px, -100px);
