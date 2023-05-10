@@ -1,13 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <link rel="stylesheet" href="css/home.min.css">
-</head>
-<body>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore id, totam fugiat deserunt officiis dignissimos? Animi cupiditate iusto et aspernatur maiores, quas atque corrupti reiciendis molestiae ad libero molestias. Quia!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <title>Finsweet/Community-3</title>
+    <link rel="stylesheet" href="css/home.min.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION START -->
+    <header class="header" id="header">
+      <nav class="container header__navigation">
+        <a href="index.html"
+          ><img class="logo" src="assets/icons/Logo.svg" alt=""
+        /></a>
+        <ul class="header__navigation-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li>
+            <a class="clone" href="#"
+              >Clone project
+              <img
+                class="arrow_clone"
+                src="assets/icons/arrow_clone.svg"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="navbar" title="Menu">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div id="navigationWrap" class="mobile_nav">
+      <div class="container menu">
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+          <button class="button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> Clone project
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- NAVIGATION END -->
+
+    <!-- SECTION HOME START -->
+    <section id="home">
+      <div class="home__container container">
+        <div class="home__top">
+          <div class="home__left">
+            <div class="small__square"></div>
+            <div class="home__left__heading">
+              <h1>Transform Your Idea Into Reality with Finsweet</h1>
+            </div>
+            <div class="home__left__paragraph">
+              <p>
+                The entire Finsweet team knows what's good with Webflow and you
+                can too with 1 week and a good attitude.
+              </p>
+            </div>
+            <div class="home__left__btn">
+              <button id="header__btn">
+                Request A Quote
+                <i class="bi bi-arrow-right"></i>
+                <div class="style__one"></div>
+                <div class="style__two"></div>
+                <div class="style__three"></div>
+                <div class="style__four"></div>
+                <svg
+                  width="23"
+                  height="10"
+                  viewBox="0 0 21 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5L20 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="home__right">
+            <div class="home__right__small__line">
+              <img
+                src="./assets/images/home/home-right-small-shapes.svg"
+                alt=""
+              />
+            </div>
+            <div class="home__right__main__pic">
+              <img
+                src="assets/images/home/home-main.png"
+                srcset="
+                  assets/images/home/home-main.png    1x,
+                  assets/images/home/home-main@2x.png 2x
+                "
+                alt=""
+              />
+            </div>
+            <div class="home__right__big__line">
+              <img
+                src="./assets/images/home/home-right-big-shapes.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="home__clients">
+          <div class="home__clients__content">
+            <span>Our Clients</span>
+            <h3>We've Worked with</h3>
+          </div>
+          <div class="home__clients__bar">
+            <div class="home__clients__logo">
+              <img src="./assets/images/home/clients/supporter-1.svg" alt="" />
+            </div>
+            <div class="home__clients__logo">
+              <img src="./assets/images/home/clients/supporter-2.svg" alt="" />
+            </div>
+            <div class="home__clients__logo">
+              <img src="./assets/images/home/clients/supporter-3.svg" alt="" />
+            </div>
+            <div class="home__clients__logo">
+              <img src="./assets/images/home/clients/supporter-4.svg" alt="" />
+            </div>
+            <div class="home__clients__logo">
+              <img src="./assets/images/home/clients/supporter-5.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION HOME END -->
+
+    <!-- SECTION ABOUT US START -->
+    <section id="about">
+      <div class="container about__container">
+        <div class="about__top">
+          <div class="about__top__left">
+            <span>ABOUT US</span>
+            <h1>
+              The company leads entire webdesign process from concept to
+              delivery.
+            </h1>
+          </div>
+          <div class="about__top__right">
+            <h3>The Era Of Technology.</h3>
+            <p>
+              Through True Rich Attended does no end it his mother since real
+              had half every him case in packages enquire we up ecstatic
+              unsatiable saw his giving Remain expense you position concluded.
+            </p>
+          </div>
+        </div>
+        <div class="about__middle">
+          <div class="about__middle__card about__middle__card1">
+            <img
+              src="./assets/images/home/about-1.png"
+              srcset="
+                ./assets/images/home/about-1.png    1x,
+                ./assets/images/home/about-1@2x.png 2x
+              "
+              alt=""
+            />
+          </div>
+          <div class="about__middle__card about__middle__card2">
+            <img
+              src="./assets/images/home/about-2.png"
+              srcset="
+                ./assets/images/home/about-2.png    1x,
+                ./assets/images/home/about-2@2x.png 2x
+              "
+              alt=""
+            />
+          </div>
+          <div class="about__middle__card about__middle__card3">
+            <img
+              src="./assets/images/home/about-3.png"
+              srcset="
+                ./assets/images/home/about-3.png    1x,
+                ./assets/images/home/about-3@2x.png 2x
+              "
+              alt=""
+            />
+            <!-- <div class="about__middle__shape">
+              <div class="shapess1"></div>
+              <div class="shapess2"></div>
+              <div class="shapess3"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="about__bottom">
+          <div class="about__bottom__num">
+            <div class="about__num">
+              <span>1560+</span>
+              <img
+                src="./assets/images/home/about-bottom-num-shaoes.svg"
+                alt=""
+              />
+              <p>Project Delivered</p>
+            </div>
+            <div class="about__num">
+              <span>100++</span>
+              <img
+                src="./assets/images/home/about-bottom-num-shaoes.svg"
+                alt=""
+              />
+              <p>Professional</p>
+            </div>
+            <div class="about__num">
+              <span>950+</span>
+              <img
+                src="./assets/images/home/about-bottom-num-shaoes.svg"
+                alt=""
+              />
+              <p>Happy Client</p>
+            </div>
+            <div class="about__num">
+              <span>10 yrs</span>
+              <img
+                src="./assets/images/home/about-bottom-num-shaoes.svg"
+                alt=""
+              />
+              <p>Experience</p>
+            </div>
+          </div>
+          <div class="about__bottom__link">
+            <a href="./company.html">Read about us</a>
+            <svg
+              width="25"
+              height="8"
+              viewBox="0 0 25 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION ABOUT US END -->
+
+    <!-- SECTION EXPERTISE START -->
+
+    <section id="expertise">
+      <div class="container expertise__container">
+        <div class="expertise__left">
+          <span>Our expertise</span>
+          <h1>
+            We want to get local identification in every corner of the world in
+            this era of global citizenship
+          </h1>
+          <p>
+            Through True Rich Attended does no end it his mother since real had
+            half every him case in packages enquire we up ecstatic unsatiable
+            saw his giving Remain expense you position concluded.
+          </p>
+        </div>
+        <div class="expertise__right">
+          <div class="expertise__left__square"></div>
+          <div class="expertise__left__card">
+            <div class="expertise__left__card__logo">
+              <img src="./assets/images/home/expertise-1.svg" alt="" />
+            </div>
+            <div class="expertise__left__card__content">
+              <span>On Time Delivery</span>
+              <p>
+                Through True Rich Attended does no end it his mother since real
+                had half every him.
+              </p>
+            </div>
+          </div>
+          <div class="expertise__left__card">
+            <div class="expertise__left__card__logo">
+              <img src="./assets/images/home/settings.svg" alt="" />
+            </div>
+            <div class="expertise__left__card__content">
+              <span>Best Quality</span>
+              <p>
+                Through True Rich Attended does no end it his mother since real
+                had half every him.
+              </p>
+            </div>
+          </div>
+          <div class="expertise__left__card">
+            <div class="expertise__left__card__logo">
+              <img src="./assets/images/home/expertise3.svg" alt="" />
+            </div>
+            <div class="expertise__left__card__content">
+              <span>Support Assist</span>
+              <p>
+                Through True Rich Attended does no end it his mother since real
+                had half every him.
+              </p>
+            </div>
+            <div class="expertise__shape">
+              <img src="./assets/images/home/expertise-shape.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION EXPERTISE END -->
+
+    <!-- SECTION SERVICE START  -->
+
+    <section id="service">
+      <div class="container service__container">
+        <div class="service__top">
+          <span>Our Services</span>
+          <div class="service__top__heading">
+            <h1>
+              We build software solutions that solve client's business
+              challenges
+            </h1>
+          </div>
+          <div class="service__top__btn">
+            <button id="header__btn">
+              Request A Quote
+              <i class="bi bi-arrow-right"></i>
+              <div class="style__one"></div>
+              <div class="style__two"></div>
+              <div class="style__three"></div>
+              <div class="style__four"></div>
+              <svg
+                width="23"
+                height="10"
+                viewBox="0 0 21 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5L20 4.5V3.5L0 3.5L0 4.5Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="service__bottom">
+          <div class="service__bottom__card">
+            <div class="card__logo">
+              <img src="./assets/images/home/service-1-logo.svg" alt="" />
+            </div>
+            <h4>Technical support</h4>
+            <p>
+              We aim to attain the greatest satisfaction for our clients and be
+              one of the prominent names when it comes to world-class service
+            </p>
+            <div class="card__bottom">
+              <a href="./company.html">Read more</a>
+              <svg
+                width="25"
+                height="8"
+                viewBox="0 0 25 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="service__bottom__card">
+            <div class="card__logo">
+              <img src="./assets/images/home/settings.svg" alt="" />
+            </div>
+            <h4>Testing Management</h4>
+            <p>
+              We aim to attain the greatest satisfaction for our clients and be
+              one of the prominent names when it comes to world-class service
+            </p>
+            <div class="card__bottom">
+              <a href="./company.html">Read more</a>
+              <svg
+                width="25"
+                height="8"
+                viewBox="0 0 25 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="service__bottom__card">
+            <div class="card__logo">
+              <img src="./assets/images/home/development.svg" alt="" />
+            </div>
+            <h4>Development</h4>
+            <p>
+              We aim to attain the greatest satisfaction for our clients and be
+              one of the prominent names when it comes to world-class service
+            </p>
+            <div class="card__bottom">
+              <a href="./company.html">Read more</a>
+              <svg
+                width="25"
+                height="8"
+                viewBox="0 0 25 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SERVICE END  -->
+
+    <!-- SECTION PROCESS START -->
+
+    <section id="process">
+      <div class="container process__container">
+        <div class="process__top">
+          <span>Our Process</span>
+          <h1>The process we are working With Our client Worldwide</h1>
+          <p>Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable.</p>
+          <div class="process__shape"><img src="./assets/images/home/process-shape.svg" alt=""></div>
+        </div>
+        <div class="process__bottom">
+          <div class="process__top__card">
+            <div class="process__line"></div>
+            <div class="process__card">
+              <div class="process__card__num">
+                <span>01</span>
+              </div>
+              <div class="process__card__logo">
+                <img src="./assets/images/home/process-1.svg" alt="">
+              </div>
+              <div class="process__card__content">
+                <h4>Discover</h4>
+                <p>We aim to attain the greatest satisfaction for our clients and be one of the prominent.</p>
+              </div>
+              <div class="process__card__shape">
+                <img src="./assets/images/home/process-card-1-shape.svg" alt="">
+              </div>
+            </div>
+            <div class="process__card">
+              <div class="process__card__num">
+                <span>02</span>
+              </div>
+              <div class="process__card__logo">
+                <img src="./assets/images/home/process-2.svg" alt="">
+              </div>
+              <div class="process__card__content">
+                <h4>Designing</h4>
+                <p>We aim to attain the greatest satisfaction for our clients and be one of the prominent.</p>
+              </div>
+            </div>
+            <div class="process__card">
+              <div class="process__card__num">
+                <span>03</span>
+              </div>
+              <div class="process__card__logo">
+                <img src="./assets/images/home/process-3.svg" alt="">
+              </div>
+              <div class="process__card__content">
+                <h4>Development</h4>
+                <p>We aim to attain the greatest satisfaction for our clients and be one of the prominent.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROCESS END -->
+
+    <!-- JAVASCRIPT LINKS START -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/navbar.js"></script>
+    <!-- JAVASCRIPT LINKS END -->
+  </body>
 </html>
