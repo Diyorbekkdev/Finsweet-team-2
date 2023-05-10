@@ -1,9 +1,6 @@
 @import "../main.scss";
 
-main{
-  position: relative;
-  // z-index: -1;
-}
+
 #section-1 {
   padding: 176px 0 96px;
 }
@@ -74,6 +71,12 @@ main{
     p{
       @include paragraph;
       margin-top: 16px;
+    }
+    ul{
+      li{
+        @include paragraph;
+         
+      }
     }
   }
 }

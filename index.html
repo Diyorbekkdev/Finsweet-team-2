@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="css/login_page.min.css">
   </head>
   <body>
+
+    <div id="loading" class="containe">
+        <h1 id="animation" class="intro-sf-title ">
+          <div class="intro-sf-title-bound"></div>
+          <div class="intro-sf-title-up">
+            <span class="first-letter intro">C</span>
+            <span class="up-to-down-1 intro">o</span>
+            <span class="intro">de breake</span>
+            <span class="up-to-down-2 intro">r</span>
+            <span class="last-letter intro">s</span>
+          </div>
+          <div class="intro-sf-title-down-wrapper">
+            <div class="intro-sf-title-bound down"></div>
+            <div class="intro-sf-title-down">
+              <span class="intro-sf-title t intro">T</span>
+              <span class="down-to-up-1 intro">e</span>
+              <span class="intro">a</span>
+              <span class="down-to-up-2 intro">m</span>
+            </div>
+            <div class="intro-sf-title-bound down" />
+          </div>
+        </h1>
+      </div>
+
       <div class="heros_container">
  
          <div class="heros dropdown" style=" background: url('assets/icons/My\ hero\ picture.jpg') center center no-repeat;
@@ -85,7 +109,7 @@
                         </svg>
                     </span>
                 </div>
-                <button formaction="home.html" class="card_button">Get started</button>
+                <button formaction="blog-inner.html" class="card_button">Get started</button>
             </form>
             <div class="card_info">
                 <p>Not registered? <a href="#">Create an account</a></p>
@@ -94,7 +118,7 @@
         <div class="fish-shadow-con">
             <svg class="fish-shadow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="0 0 743 645">
     
-    
+            
     
                 <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
                     <path d="M177.367 337.568L182.709 357.739C198.517 417.421 249.748 460.995 311.193 467.019L421.508 477.834C478.237 483.396 532.831 454.649 560.346 404.729C607.09 319.923 557.549 214.182 462.47 195.822L375.079 178.946C368.369 177.651 361.766 175.854 355.324 173.572C251.651 136.837 149.205 231.245 177.367 337.568Z" class="line" id="Line" />
@@ -271,6 +295,7 @@
         </svg> </div>
     <a href="https://t.me/+GoZXsw5wscc3Mjc6"><img class="team" src="assets/icons/Frame_9.png" width="100px" alt=""></a>
      <h1 class="taklif">Code_Breakers</h1>
+     <script src="JavaScript/introanimation.js"></script>
     <script>
         function animateTitle() {
   var title = document.title.split(' '); // split the title into an array of words
