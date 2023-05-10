@@ -43,7 +43,8 @@
 }
 
 .breaking{
-    
+    position: relative;
+    z-index: -1;
     &_container{
         position: relative;
         margin-top: 176px;
@@ -89,7 +90,7 @@
 }
 
 .idea_container{
-    max-width: 842px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 0 1.25rem;
 }
@@ -104,6 +105,18 @@
         @include paragraph;
     }
     h4{
+        margin-top: 50px;
         @include heading(h4)
+    }
+    ul{
+        margin-top: 24px;
+        li,p{
+            // margin-top: px;
+            @include paragraph;
+
+        }
+        .ul_last{
+            margin-top: 4px;
+        }
     }
 }
