@@ -1350,3 +1350,203 @@ table {
   background: #fff;
   color: #ff0000;
 }
+
+#section-1 {
+  padding: 176px 0 96px;
+}
+
+.sec1-container {
+  text-align: center;
+}
+.sec1-container h6 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.87;
+}
+.sec1-container h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  max-width: 624px;
+  margin: 24px auto;
+}
+.sec1-container p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  max-width: 624px;
+  margin: 0 auto;
+}
+.sec1-container h1 {
+  font-weight: 800;
+  font-size: 250px;
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-clip: text;
+  white-space: wrap;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url(../../assets/images/career/masking.png);
+}
+@media only screen and (max-width: 1100px) {
+  .sec1-container h1 {
+    font-size: 150px;
+  }
+}
+@media only screen and (max-width: 665px) {
+  .sec1-container h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #section-2 {
+    padding: 0;
+  }
+}
+
+.sec2-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  background-color: #ECF8F9;
+  padding: 78px !important;
+}
+.sec2-container .card {
+  max-width: 354px;
+  padding: 48px 105px 48px 48px;
+}
+.sec2-container .card h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+}
+.sec2-container .card p {
+  line-height: 30px;
+}
+.sec2-container .card a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 52px;
+}
+@media only screen and (max-width: 1200px) {
+  .sec2-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .sec2-container {
+    margin: 0 auto;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sec2-container {
+    padding: 30px;
+  }
+  .sec2-container .card {
+    padding: 20px 30px 20px 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+}
+
+#section-3 {
+  background-color: #fafafc;
+  padding: 96px 0;
+}
+
+.sec3-container .top {
+  max-width: 568px;
+}
+.sec3-container .top .caption {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.87;
+}
+.sec3-container .top h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  margin: 16px 0 24px;
+}
+.sec3-container .top p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+}
+.sec3-container .sec3-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  margin-top: 64px;
+}
+.sec3-container .sec3-cards .card-item {
+  max-width: 418px;
+  padding: 32px;
+  background-color: white;
+  transition: 0.4s;
+}
+.sec3-container .sec3-cards .card-item h6 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+.sec3-container .sec3-cards .card-item:hover {
+  background-color: #666DFF;
+}
+.sec3-container .sec3-cards .card-item:hover h6,
+.sec3-container .sec3-cards .card-item:hover p {
+  transition: 0.4s;
+  color: white;
+}
+@media only screen and (max-width: 1085px) {
+  .sec3-container .sec3-cards {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec3-container .sec3-cards .card-item {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sec3-container .sec3-cards {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sec3-container .sec3-cards .card-item {
+    margin: 0 auto;
+  }
+}

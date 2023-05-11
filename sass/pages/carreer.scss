@@ -41,7 +41,7 @@
 }
 
 #section-2 {
-  padding: 78px;
+  // padding: 78px !important;
   @include media(800px) {
     padding: 0;
   }
@@ -51,7 +51,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
   background-color: $light-blue;
-  padding: 78px;
+  padding: 78px !important;
   .card {
     max-width: 354px;
     padding: 48px 105px 48px 48px;
