@@ -1350,3 +1350,185 @@ table {
   background: #fff;
   color: #ff0000;
 }
+
+#section-1 {
+  padding: 176px 0 100px;
+}
+
+.sec1-container {
+  text-align: center;
+}
+.sec1-container img {
+  max-width: 320px;
+  width: 100%;
+}
+.sec1-container h3 {
+  margin: 48px 0 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+}
+.sec1-container p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  max-width: 505px;
+  margin: 0 auto;
+}
+.sec1-container .ceo {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  margin-bottom: 24px;
+}
+.sec1-container .media {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 32px;
+}
+
+#news {
+  background: #ecf8f9;
+  padding: 96px 0;
+}
+#news .news__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 48px;
+}
+#news .news__container .news__top .news__small__square {
+  width: 16px;
+  height: 16px;
+  background-color: #444cfc;
+}
+#news .news__container .news__top h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  margin-top: 16px;
+}
+#news .news__container .news__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+}
+#news .news__container .news__bottom .news__card {
+  background-color: #fff;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#news .news__container .news__bottom .news__card .news__card__content {
+  margin-left: 32px;
+}
+#news .news__container .news__bottom .news__card .news__card__content span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.87;
+  color: #232536;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  opacity: 0.6;
+}
+#news .news__container .news__bottom .news__card .news__card__content h2 {
+  margin: 8px 0 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  max-width: 264px;
+}
+#news .news__container .news__bottom .news__card .news__card__content .link a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  color: #444cfc;
+  margin-right: 12px;
+}
+@media only screen and (max-width: 1200px) {
+  #news .news__container {
+    gap: 70px;
+  }
+  #news .news__container .news__top {
+    width: 100%;
+  }
+  #news .news__container .news__top h1 {
+    width: 100%;
+    text-align: center;
+  }
+  #news .news__container .news__top .news__small__square {
+    display: none;
+  }
+  #news .news__container .news__bottom {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #news .news__container .news__top h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  #news .news__container .news__bottom .news__card {
+    width: 100% !important;
+  }
+  #news .news__container .news__bottom .news__card img {
+    width: 50%;
+  }
+  #news .news__container .news__bottom .news__card .link img {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  #news .news__container .news__bottom .news__card {
+    margin: 0 -20px;
+    flex-direction: column;
+    padding: 32px;
+    gap: 32px;
+  }
+  #news .news__container .news__bottom .news__card img {
+    width: 70%;
+  }
+  #news .news__container .news__bottom .news__card .news__card__content {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #news .news__container .news__bottom .news__card {
+    padding: 0 0 32px 0;
+  }
+  #news .news__container .news__bottom .news__card img {
+    width: 100%;
+  }
+}
