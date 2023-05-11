@@ -1828,3 +1828,46 @@ table {
   opacity: 1;
   transition: 0.8s;
 }
+
+@media (max-width: 1000px) {
+  .working__boxing {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 972px) {
+  .header__inner {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    grid-row-gap: 140px;
+    text-align: center;
+  }
+  #header__btn {
+    margin: 0 auto;
+  }
+  .header__inner {
+    margin: 0 auto;
+  }
+  #working__inner {
+    text-align: center;
+  }
+  .working__boxing {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .support,
+  .development,
+  .aws,
+  .consulting,
+  .technology {
+    flex-direction: column !important;
+    gap: 0px !important;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  .working__inner__title img {
+    width: 27px;
+    height: 29px;
+  }
+}
