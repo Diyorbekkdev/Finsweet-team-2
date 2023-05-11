@@ -206,3 +206,12 @@
     }
   }
 }
+
+#map {
+  margin-top: 96px;
+  .map__container {
+    iframe {
+      width: 100%;
+    }
+  }
+}

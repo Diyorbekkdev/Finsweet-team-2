@@ -1645,3 +1645,10 @@ table {
     width: 100%;
   }
 }
+
+#map {
+  margin-top: 96px;
+}
+#map .map__container iframe {
+  width: 100%;
+}
