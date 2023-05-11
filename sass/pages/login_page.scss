@@ -390,3 +390,217 @@ svg:hover {
   display: block;
   transition: all .3s ease-in;
 }
+
+
+audio{
+  position: absolute;
+  left: 20px;
+}
+
+#loading {
+	position: fixed;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	z-index: 100;
+	transition: 0.5s;
+  @include media(500px){
+   display: none;
+  }
+}
+
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1;
+}
+
+.containe{
+  .intro-sf-title {
+    font-family: "Benguiat ITC W01 Bold Cn";
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: -0.05rem -0.05rem 1px #123eed,
+        0.05rem -0.05rem 1px #123eed,
+        -0.05rem 0.05rem 1px #123eed,
+        0.05rem 0.05rem 1px #123eed,
+        0 0 15px #0d2cab,
+        0 0 20px #0b29a1;
+    letter-spacing: -2px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: title-fade-in 2s ease-in-out, title-scale-out 15s ease-in-out;
+
+    &.outro {
+        animation: title-fade-out 4s linear forwards, title-scale-in 8s ease-in forwards;
+    }
+
+    & .first-letter {
+        font-size: 150px;
+        margin-top: -10px;
+        animation: letter-left-to-right 13s linear;
+    }
+
+    & .last-letter {
+        font-size: 150px;
+        margin-top: -10px;
+        animation: letter-right-to-left 13s linear;
+    }
+
+    & .t {
+        font-size: 105%;
+        margin-top: -5px;
+        animation: letter-left-to-right 12s linear;
+    }
+
+    &-bound {
+        visibility: hidden;
+        box-shadow: -0.05rem -0.05rem 2px #123eed,
+            0.05rem -0.05rem 2px #123eed,
+            -0.05rem 0.05rem 2px #123eed,
+            0.05rem 0.05rem 2px #123eed;
+        height: 5px;
+        
+        &.visible {
+            visibility: visible;
+            animation: bound-fade-in 2s linear;
+        }
+
+        &.down {
+            width: 100%;
+            margin-top: 0.8rem;
+        }
+    }
+
+    &-up {
+        display: flex;
+        justify-content: center;
+
+        & .up-to-down-1 {
+            animation: letter-up-to-down 9s linear;
+        }
+
+        & .up-to-down-2 {
+            animation: letter-up-to-down 13s linear;
+        }
+    }
+
+    &-down {
+        display: flex;
+        justify-content: center;
+        margin-top: -20px;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: -20px;
+
+            & .intro-title-bound {
+                width: 100%;
+            }
+        }
+
+        & .down-to-up-1 {
+            animation: letter-down-to-up 10s linear;
+        }
+
+        & .down-to-up-2 {
+            animation: letter-down-to-up 12s linear;
+        }
+    }
+}
+
+@keyframes title-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes title-fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes title-scale-in {
+    to {
+        transform: scale(10);
+    }
+}
+
+@keyframes title-scale-out {
+    from {
+        transform: scale(3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes letter-down-to-up {
+    from {
+        transform: translateY(10rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes letter-up-to-down {
+    from {
+        transform: translateY(-10rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes letter-left-to-right {
+    from {
+        transform: translateX(-10rem);
+    }
+
+    to {
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes letter-right-to-left {
+    from {
+        transform: translateX(10rem);
+    }
+
+    to {
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes bound-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+}

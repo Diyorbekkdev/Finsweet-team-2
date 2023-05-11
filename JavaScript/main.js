@@ -13,6 +13,7 @@ let tl = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true})
 tl.to(".logo", { rotation: 360 });
 tl.to(".purple", { rotation: 360 });
 tl.to(".orange", { rotation: 360 });
+tl.to("bf_right",{rotation: 360});
 
 
 

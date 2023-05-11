@@ -1,0 +1,241 @@
+.group {
+  position: relative;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: px;
+}
+
+.popup__content {
+  background-color: white;
+  color: black;
+  max-width: 550px;
+  position: relative;
+  padding: 40px;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, -100px);
+}
+
+.popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: black;
+  padding: 8px;
+  color: white;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.popup__title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 58px;
+  color: #232536;
+}
+
+.popup__text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #232536;
+  opacity: 0.87;
+}
+
+.popup__forms {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#header__btn {
+  position: relative;
+
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  background: linear-gradient(180deg, #444cfc 0%, #444cfc 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  .style__one {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 19px;
+    height: 19px;
+    background-color: #ffa155;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .style__two {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    width: 11px;
+    height: 11px;
+    background-color: #ffd3af;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .style__three,
+  .style__four {
+    width: 8px;
+    height: 8px;
+    background-color: #666dff;
+    opacity: 0;
+  }
+  .style__three {
+    position: absolute;
+    top: 0px;
+    left: 19px;
+    transition: 0.3s;
+  }
+  .style__four {
+    position: absolute;
+    top: 19px;
+    left: 0px;
+    transition: 0.1s;
+  }
+}
+
+#header__btn:hover .style__one {
+  opacity: 1;
+}
+
+#header__btn:hover .style__three {
+  opacity: 1;
+}
+
+#header__btn:hover .style__two {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+#header__btn:hover .style__four {
+  opacity: 1;
+}
