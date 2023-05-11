@@ -7,6 +7,12 @@
   padding: 0 1.25rem !important;
 }
 
+.container__pp {
+  max-width: 840px !important;
+  margin: 0 auto !important;
+  padding: 0 1.25rem !important;
+}
+
 @media (max-width: 900px) {
   html {
     font-size: 10px;
@@ -1349,4 +1355,67 @@ table {
 .social_icon li:nth-child(4):hover a {
   background: #fff;
   color: #ff0000;
+}
+
+.vectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-top: 196px;
+}
+
+.privacy__policy h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  padding-top: 24px;
+}
+.privacy__policy p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  padding: 8px 0 72px;
+}
+
+#privacy__policy__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #ecf8f9;
+}
+#privacy__policy__inner .privacy__policy__text {
+  padding-bottom: 96px;
+}
+#privacy__policy__inner .privacy__policy__text h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  padding: 96px 0 24px;
+}
+#privacy__policy__inner .privacy__policy__text h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  padding: 28px 0 16px;
+}
+#privacy__policy__inner .privacy__policy__text p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  text-align: justify;
+  padding: 12px 0;
 }

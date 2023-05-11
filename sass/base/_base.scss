@@ -1,11 +1,17 @@
-.container{
-    max-width: 1280px !important;
-    margin: 0 auto !important;
-    padding: 0 1.25rem !important;
+.container {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 1.25rem !important;
 }
 
-@media (max-width: 900px){
-    html{
-        font-size: 10px;
-    }
+.container__pp {
+  max-width: 840px !important;
+  margin: 0 auto !important;
+  padding: 0 1.25rem !important;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
 }
