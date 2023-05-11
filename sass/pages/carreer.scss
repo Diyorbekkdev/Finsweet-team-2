@@ -1,1 +1,146 @@
-@import '../main.scss';
+@import "../main.scss";
+
+#section-1 {
+  padding: 176px 0 96px;
+}
+
+.sec1-container {
+  text-align: center;
+  h6 {
+    @include caption;
+  }
+  h2 {
+    @include heading(h2);
+    max-width: 624px;
+    margin: 24px auto;
+  }
+  p {
+    @include paragraph;
+    max-width: 624px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 250px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-clip: text;
+    white-space: wrap;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(../../assets/images/career/masking.png);
+    @include media(1100px){
+      font-size: 150px;
+    }
+    @include media(665px){
+      font-size: 70px;
+    }
+  }
+}
+
+#section-2 {
+  padding: 78px;
+  @include media(800px) {
+    padding: 0;
+  }
+}
+.sec2-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  background-color: $light-blue;
+  padding: 78px;
+  .card {
+    max-width: 354px;
+    padding: 48px 105px 48px 48px;
+    h5 {
+      @include heading(h6);
+    }
+    p {
+      line-height: 30px;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 52px;
+    }
+  }
+  @include media(1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media(1000px) {
+    margin: 0 auto;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include media(800px) {
+    padding: 30px;
+    .card {
+      padding: 20px 30px 20px 20px;
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+    }
+  }
+}
+
+#section-3 {
+  background-color: #fafafc;
+  padding: 96px 0;
+}
+.sec3-container {
+  .top {
+    max-width: 568px;
+    .caption {
+      @include caption;
+    }
+    h3 {
+      @include heading(h3);
+      margin: 16px 0 24px;
+    }
+    p {
+      @include paragraph;
+    }
+  }
+  .sec3-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    margin-top: 64px;
+    .card-item {
+      max-width: 418px;
+      padding: 32px;
+      background-color: white;
+      transition: 0.4s;
+      h6 {
+        @include heading(h6);
+        margin: 8px 0;
+        transition: 0.4s;
+      }
+      &:hover {
+        background-color: $footer-bg;
+        h6,
+        p {
+          transition: 0.4s;
+          color: white;
+        }
+      }
+    }
+    @include media(1085px) {
+      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      .card-item {
+        margin: 0 auto;
+      }
+    }
+    @include media(500px) {
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      .card-item {
+        margin: 0 auto;
+      }
+    }
+  }
+}
