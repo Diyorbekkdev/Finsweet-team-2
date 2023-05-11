@@ -1,1 +1,208 @@
-@import '../main.scss';
+@import "../main.scss";
+
+#contact {
+  padding-top: 170px;
+  .contact__container {
+    @include flexbox(row, start, start);
+    gap: 90px;
+    .contact__left {
+      .contact__heading {
+        @include flexbox(column, start, start);
+        gap: 24px;
+        .contact__small__square {
+          width: 24px;
+          height: 24px;
+          background: #ffd3af;
+        }
+        span {
+          @include caption;
+          color: black;
+          opacity: 1;
+        }
+        h1 {
+          @include heading(h2);
+        }
+        p {
+          @include paragraph;
+        }
+      }
+      .contact__form {
+        margin-top: 64px;
+        form {
+          @include flexbox(column, start, start);
+          label {
+            @include p_small;
+            color: #232536;
+            opacity: 0.7;
+            margin-top: 24px;
+          }
+          input {
+            width: 405px;
+            @include paragraph;
+            color: #232536;
+            padding: 8px 0;
+            border: none;
+            border-bottom: 1px solid #232536;
+            outline: none;
+            &::placeholder {
+              @include paragraph;
+              color: #232536;
+              opacity: 0.5;
+            }
+          }
+          textarea {
+            width: 405px;
+            @include paragraph;
+            color: #232536;
+            padding: 8px 0;
+            border: none;
+            border-bottom: 1px solid #232536;
+            outline: none;
+            &::placeholder {
+              @include paragraph;
+              color: #232536;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      .contact__btn {
+        margin-top: 56px;
+        #header__btn {
+          width: 220px;
+          position: relative;
+          padding: 20px;
+          background: linear-gradient(180deg, #444cfc 0%, #444cfc 100%);
+          border: none;
+          cursor: pointer;
+          @include flexbox(row, center, center);
+          gap: 5px;
+          a {
+            @include paragraph;
+            text-decoration: none;
+            color: $white;
+          }
+          svg {
+            transition: 0.3s;
+          }
+          .style__one {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 19px;
+            height: 19px;
+            background-color: #ffa155;
+            opacity: 0;
+            transition: 1s;
+            // transition-delay: 0.2;
+          }
+          .style__two {
+            position: absolute;
+            top: 0px;
+            left: 8px;
+            width: 11px;
+            height: 11px;
+            background-color: #ffd3af;
+            opacity: 0;
+            transition: 0.5s;
+          }
+          .style__three,
+          .style__four {
+            width: 8px;
+            height: 8px;
+            background-color: #666dff;
+            opacity: 0;
+            transition: 0.5s;
+            transition-delay: 0.5s;
+          }
+          .style__three {
+            position: absolute;
+            top: 0px;
+            left: 19px;
+            transition: 0.5s;
+            transition-delay: 1;
+          }
+          .style__four {
+            position: absolute;
+            top: 19px;
+            left: 0px;
+            transition: 0.5s;
+            // transition-delay: 1.5;
+          }
+        }
+        #header__btn:hover .style__one {
+          opacity: 1;
+        }
+
+        #header__btn:hover .style__three {
+          opacity: 1;
+        }
+
+        #header__btn:hover .style__two {
+          opacity: 1;
+          transition: 0.1s ease-in;
+        }
+
+        #header__btn:hover .style__four {
+          opacity: 1;
+        }
+        #header__btn:hover svg {
+          transform: translateX(7px);
+        }
+      }
+    }
+    .contact__right {
+      background: #666dff;
+      padding: 83px 96px 130px;
+      @include flexbox(column, start, start);
+      gap: 24px;
+      .contact__card {
+        span {
+          @include p_small;
+          color: white;
+          opacity: 0.6;
+        }
+        h4 {
+          @include heading(h6);
+          font-size: 18px;
+          color: white;
+        }
+        .border__line {
+          margin: 12px 0;
+          width: 300px !important;
+          height: 0;
+          border: 1px solid rgba(0, 0, 0, 0.358);
+        }
+        p {
+          @include paragraph;
+          color: white;
+          opacity: 0.6;
+          max-width: 270px;
+        }
+      }
+      .contact__media {
+        margin-top: 55px;
+        @include flexbox(row, start, start);
+        gap: 30px;
+        i {
+          font-size: 20px !important;
+          color: white;
+        }
+      }
+    }
+    @include media(1100px) {
+      flex-direction: column;
+      align-items: center;
+      .contact__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+      .contact__right{
+        width: 100%;
+      }
+    }
+  }
+}
