@@ -4,12 +4,50 @@
 #section-1 {
   padding: 176px 0 96px;
 }
+.btn-1 {
+  position: relative;
+  background-color: $blue;
+  padding: 20px 30px;
+  transition: 0.5s;
+  margin-top: 40px;
+  display: inline-block;
+  a {
+    color: $white;
+    text-decoration: none;
+    white-space: nowrap;
+    .strelka {
+      margin-left: 13px;
+      transition: 0.3s;
+    }
+  }
+  .border-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    opacity: 0;
+    transition: 0.8s;
+  }
+  &:hover {
+    .strelka {
+      transform: translateX(10px);
+    }
+    .border-img {
+      opacity: 1;
+    }
+  }
+  @include media(400px) {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .sec1-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 56px;
+  // width: 100%;
   .left {
     h6 {
       @include caption;
@@ -22,53 +60,22 @@
       @include paragraph;
       max-width: 430px;
     }
-    .btn {
-      width: 182px;
-      position: relative;
-      background-color: $blue;
-      padding: 20px 30px;
-      transition: 0.5s;
-      margin-top: 40px;
-      a {
-        color: $white;
-        text-decoration: none;
-        .strelka {
-          margin-left: 13px;
-          transition: 0.3s;
-        }
-      }
-      .border-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 30px;
-        opacity: 0;
-        transition: 0.8s;
-      }
-      &:hover {
-        .strelka {
-          transform: translateX(10px);
-        }
-        .border-img{
-          opacity: 1;
-        }
-      }
-    }
   }
-  .right{
+  .right {
     position: relative;
     background-color: $light-yellow;
     padding: 80px 110px 80px 80px;
-    img{
+    z-index: -1;
+    img {
       position: absolute;
       right: 0;
       top: 0;
     }
-    h4{
+    h4 {
       @include heading(h4);
       margin-bottom: 8px;
     }
-    p{
+    p {
       @include paragraph;
       margin-top: 16px;
     }
@@ -79,4 +86,146 @@
       }
     }
   }
+  @include media(720px) {
+    flex-direction: column;
+    .right {
+      width: 100%;
+    }
+  }
+  @include media(400px) {
+    .left {
+      text-align: center;
+    }
+    .right {
+      padding: 30px 60px 30px 30px;
+    }
+  }
+}
+
+.accordion {
+  display: none;
+  padding: 20px 30px;
+  @include media(730px) {
+    display: block;
+  }
+  .accordion-item {
+    max-width: 842px;
+    margin: 0 auto;
+    padding: 30px 10px;
+    li {
+      list-style-type: disc !important;
+      margin-top: 30px;
+      line-height: 30px;
+    }
+  }
+  .accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: $light-yellow-bg;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+      var(--bs-accordion-border-color);
+  }
+}
+
+.ap-tab {
+  width: 100%;
+  background-color: $light-yellow-bg;
+  @include media(730px) {
+    display: none;
+  }
+  .ap-tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 96px;
+    a {
+      display: block;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      text-decoration: none;
+      color: $black;
+      padding: 43px 0 33px;
+    }
+    .active-tab {
+      position: relative;
+      color: blue;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: -5px;
+        left: 0;
+        background-color: blue;
+      }
+    }
+    :not(.active-tab) {
+      position: relative;
+      transition: 0.5s;
+      &:hover {
+        color: cornflowerblue;
+      }
+    }
+  }
+}
+.ap-tab-container {
+  width: 100%;
+  background-color: $light-yellow-bg;
+  border-top: 5px solid #e0f1f2;
+  padding: 96px 70px;
+  @include media(730px) {
+    // display: none;
+  }
+  .ap-tab-content {
+    max-width: 842px;
+    margin: 0 auto;
+    li {
+      list-style: disc inside;
+      margin-top: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.sec3-container {
+  padding-bottom: 96px;
+  padding-top: 96px;
+  h3 {
+    @include heading(h3);
+  }
+  .inputs {
+    .row-1,
+    textarea {
+      margin-top: 25px;
+    }
+    input,
+    textarea {
+      background-color: $light-grey-bg;
+    }
+    @include media(600px) {
+      .row {
+        display: block;
+        .input-4 {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  .check {
+    display: flex;
+    margin-top: 36px;
+    .form-check-input {
+      margin-top: 0;
+      border-radius: 0;
+      min-width: 36px;
+      height: 36px;
+    }
+  }
+  label {
+    @include paragraph;
+    max-width: 842px;
+    margin-left: 20px;
+  }
+
 }
