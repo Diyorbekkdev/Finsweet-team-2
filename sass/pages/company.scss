@@ -1,1 +1,133 @@
 @import '../main.scss';
+// SECTION ABOUT START
+#about {
+  padding: 120px 0 100px;
+  .about__container {
+    @include flexbox(column, start, start);
+    gap: 48px;
+    .about__top {
+      @include flexbox(row, start, start);
+      gap: 90px;
+      .about__top__left {
+        span {
+          @include caption;
+        }
+        h1 {
+          margin-top: 16px;
+          @include heading(h2);
+          font-size: 45px;
+        }
+      }
+      .about__top__right {
+        margin-top: 35px;
+        h3 {
+          @include heading(h3);
+        }
+        p {
+          margin-top: 16px;
+          @include paragraph;
+        }
+      }
+    }
+    .about__middle {
+      @include flexbox(row, start, start);
+      gap: 11px;
+      .about__middle__card {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .about__bottom {
+      display: flex;
+      gap: 425px;
+      .about__bottom__num {
+        @include flexbox(row, start, start);
+        flex-wrap: wrap;
+        gap: 66px;
+        .about__num {
+          @include flexbox(column, start, start);
+          img {
+            margin: 8px 0 4px;
+          }
+          p {
+            @include paragraph;
+            color: #000;
+          }
+          span {
+            @include heading(h3);
+            color: #232536;
+          }
+        }
+      }
+      .about__bottom__link {
+        @include flexbox(row, start, center);
+        a {
+          @include paragraph;
+          text-decoration: none;
+          color: #444cfc;
+        }
+        svg {
+          margin-left: 16px;
+          transition: 0.3s;
+        }
+        &:hover svg {
+          transform: translateX(10px) !important;
+        }
+      }
+    }
+    @include media(1280px) {
+      .about__bottom {
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+    @include media(1111px) {
+      .about__top {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+    @include media(1000px) {
+      .about__middle {
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+      }
+      .about__bottom {
+        margin: 0 auto !important;
+        text-align: center;
+        .about__bottom__num {
+          justify-content: center;
+          .about__num {
+            align-items: center;
+          }
+        }
+        .about__bottom__link {
+          margin: 0 auto;
+        }
+      }
+    }
+    @include media(550px) {
+      .about__top {
+        .about__top__left {
+          text-align: center;
+          h1 {
+            font-size: 35px;
+            line-height: 45px;
+            margin: 25px 0;
+          }
+        }
+        .about__top__right {
+          text-align: center;
+          margin: 0;
+          h3 {
+            font-size: 28px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+// SECTION ABOUT END
