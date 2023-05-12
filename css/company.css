@@ -93,7 +93,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -515,10 +516,6 @@ table {
 }
 .nav a {
   color: white;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -558,10 +555,6 @@ table {
 .social a {
   color: #484848;
   color: white;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -574,10 +567,6 @@ table {
   color: #f3f2f2;
   padding-right: 12px;
   font-size: 1.8em !important;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -1338,8 +1327,6 @@ table {
 
 .social_icon li:nth-child(3) a {
   background: #f09433;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
   color: #fff;
@@ -1740,5 +1727,3 @@ table {
   margin-top: 96px;
   width: 100%;
 }
-
-/*# sourceMappingURL=company.css.map */
