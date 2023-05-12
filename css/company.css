@@ -1687,5 +1687,58 @@ table {
     line-height: 45px !important;
   }
 }
+.breaking {
+  position: relative;
+  z-index: -1;
+}
+.breaking_container {
+  position: relative;
+  margin-top: 176px;
+}
+.breaking_container .shape_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.breaking_container .shape_2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.breaking_container-info h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  max-width: 700px;
+  padding-top: 50px;
+}
+.breaking_container-info .breaking_info {
+  margin-top: 24px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  max-width: 719px;
+}
+.breaking_container-info .hero_info {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.breaking_container-info .hero_info .january {
+  opacity: 0.6;
+}
+
+.shoot img {
+  margin-top: 96px;
+  width: 100%;
+}
 
 /*# sourceMappingURL=company.css.map */

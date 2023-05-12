@@ -131,7 +131,6 @@
   }
 }
 // SECTION ABOUT END
-
 // SECTION EXPERTISE START
 #expertise {
   padding: 96px 0;
@@ -251,3 +250,51 @@
   }
 }
 // SECTION EXPERTISE END
+
+
+.breaking{
+    position: relative;
+    z-index: -1;
+    &_container{
+        position: relative;
+        margin-top: 176px;
+        .shape_1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .shape_2{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-info{
+            h2{
+                @include heading(h2);
+                max-width: 700px;
+                padding-top: 50px;
+            }
+            .breaking_info{
+                margin-top: 24px;
+                @include paragraph();
+                max-width: 719px;
+            }
+            .hero_info{
+                margin-top: 32px;
+                @include flexbox(row, flex-start, center);
+                gap: 12px;
+                .january{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+// second section
+.shoot{
+    img{
+        margin-top: 96px;
+        width: 100%;
+    }
+}
