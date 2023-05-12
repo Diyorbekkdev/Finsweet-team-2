@@ -1547,4 +1547,145 @@ table {
   }
 }
 
+#expertise {
+  padding: 96px 0;
+  background-color: #ecf8f9;
+}
+#expertise .expertise__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 140px;
+}
+#expertise .expertise__container .expertise__left span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.87;
+  color: black;
+  opacity: 1;
+}
+#expertise .expertise__container .expertise__left h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  margin: 16px 0 24px;
+  max-width: 700px;
+}
+#expertise .expertise__container .expertise__left p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  max-width: 700px;
+}
+#expertise .expertise__container .expertise__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 12px;
+}
+#expertise .expertise__container .expertise__right .expertise__left__square {
+  background: #444cfc;
+  width: 16px;
+  height: 16px;
+}
+#expertise .expertise__container .expertise__right .expertise__left__card {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding: 32px 70px 32px 32px;
+  background-color: #fff;
+}
+#expertise .expertise__container .expertise__right .expertise__left__card .expertise__left__card__logo {
+  background-color: #ffe6d2;
+  height: 55px;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#expertise .expertise__container .expertise__right .expertise__left__card .expertise__left__card__content span {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  color: #232536;
+  opacity: 1;
+  color: black;
+  font-weight: 600;
+}
+#expertise .expertise__container .expertise__right .expertise__left__card .expertise__left__card__content p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5f6d;
+  margin-top: 8px;
+  max-width: 400px;
+}
+#expertise .expertise__container .expertise__right .expertise__left__card .expertise__shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#expertise .expertise__container .expertise__right .expertise__left__card .expertise__shape img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  #expertise .expertise__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  #expertise .expertise__container .expertise__left {
+    width: 100%;
+    text-align: center;
+  }
+  #expertise .expertise__container .expertise__left p {
+    max-width: 100%;
+  }
+  #expertise .expertise__container .expertise__left h1 {
+    max-width: 100%;
+    margin: 25px 0;
+  }
+  #expertise .expertise__container .expertise__right {
+    width: 100%;
+    align-items: center;
+  }
+  #expertise .expertise__container .expertise__right .expertise__left__square {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #expertise .expertise__container .expertise__right {
+    gap: 20px;
+  }
+  #expertise .expertise__container .expertise__right .expertise__left__card {
+    width: 100%;
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .expertise__left h1 {
+    font-size: 35px !important;
+    line-height: 45px !important;
+  }
+}
+
 /*# sourceMappingURL=company.css.map */

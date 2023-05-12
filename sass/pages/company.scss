@@ -1,4 +1,4 @@
-@import '../main.scss';
+@import "../main.scss";
 // SECTION ABOUT START
 #about {
   padding: 120px 0 100px;
@@ -131,3 +131,123 @@
   }
 }
 // SECTION ABOUT END
+
+// SECTION EXPERTISE START
+#expertise {
+  padding: 96px 0;
+  background-color: #ecf8f9;
+  .expertise__container {
+    @include flexbox(row, start, center);
+    gap: 140px;
+    .expertise__left {
+      span {
+        @include caption;
+        color: black;
+        opacity: 1;
+      }
+      h1 {
+        @include heading(h2);
+        margin: 16px 0 24px;
+        max-width: 700px;
+      }
+      p {
+        @include paragraph;
+        max-width: 700px;
+      }
+    }
+    .expertise__right {
+      @include flexbox(column, start, start);
+      gap: 12px;
+      .expertise__left__square {
+        background: #444cfc;
+        width: 16px;
+        height: 16px;
+      }
+      .expertise__left__card {
+        position: relative;
+        display: flex;
+        gap: 16px;
+        padding: 32px 70px 32px 32px;
+        background-color: #fff;
+        .expertise__left__card__logo {
+          background-color: #ffe6d2;
+          height: 55px;
+          border-radius: 50%;
+          padding: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .expertise__left__card__content {
+          span {
+            @include heading(h6);
+            opacity: 1;
+            color: black;
+            font-weight: 600;
+          }
+          p {
+            @include paragraph;
+            margin-top: 8px;
+            max-width: 400px;
+          }
+        }
+        .expertise__shape {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@include media(1100px) {
+  #expertise {
+    .expertise__container {
+      @include flexbox(column, start, center);
+      .expertise__left {
+        width: 100%;
+        text-align: center;
+        p {
+          max-width: 100%;
+        }
+        h1 {
+          max-width: 100%;
+          margin: 25px 0;
+        }
+      }
+      .expertise__right {
+        width: 100%;
+        align-items: center;
+        .expertise__left__square {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@include media(750px) {
+  #expertise {
+    .expertise__container {
+      .expertise__right {
+        gap: 20px;
+        .expertise__left__card {
+          width: 100%;
+          padding: 40px;
+        }
+      }
+    }
+  }
+}
+@include media(700px) {
+  .expertise__left {
+    h1 {
+      font-size: 35px !important;
+      line-height: 45px !important;
+    }
+  }
+}
+// SECTION EXPERTISE END
